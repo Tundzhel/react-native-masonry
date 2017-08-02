@@ -31,15 +31,16 @@
   "dependencies": {
     "data.task": "^3.1.1",
     "lodash.isequal": "^4.5.0",
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.5.8",
+    "react-native-img-cache": "^1.4.0"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "^0.43.0"
   },
   "devDependencies": {
-    "babel-preset-react-native": "^1.9.1",
     "babel-jest": "^19.0.0",
+    "babel-preset-react-native": "^1.9.1",
     "jest": "^19.0.2",
     "jest-react-native": "^18.0.0",
     "react": "16.0.0-alpha.6",
@@ -48,6 +49,9 @@
   },
   "jest": {
     "preset": "jest-react-native",
-    "modulePathIgnorePatterns": ["<rootDir>/example/", "<rootDir>/__tests__/mocks/"]
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/",
+      "<rootDir>/__tests__/mocks/"
+    ]
   }
 }
