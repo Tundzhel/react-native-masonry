@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { View, Image, TouchableHighlight } from 'react-native';
-import { CachedImage } from 'react-native-img-cache'
 
 export default function Brick (props) {
   // Avoid margins for first element
@@ -20,11 +19,11 @@ export default function Brick (props) {
 // _getImageTag :: Image, Gutter -> ImageTag
 export function _getImageTag (image, gutter = 0) {
   return (
-      <CachedImage
+      <Image
         key={image.uri}
         source={{ uri: image.uri }}
         resizeMethod='auto'
-        style={{ width: image.width, height: image.height, marginTop: gutter }} mutable />
+        style={{ width: image.width, height: image.height, marginTop: gutter }} />
   );
 }
 
